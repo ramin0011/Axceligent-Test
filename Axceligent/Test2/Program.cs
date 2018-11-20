@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,27 +24,5 @@ namespace Test2
             }
         }
 
-    }
-
-    public class User
-    {
-        private static List<User> usernames=new List<User>();
-        public User()
-        {
-            
-        }
-        private string UserName { get; set; }
-        private User(string username)
-        {
-            this.UserName = username;
-        }
-        public void Add(string userName)
-        {
-            usernames.Add(new User(userName));
-        }
-        public int GetUsersCount()
-        {
-            return usernames.Count;
-        }
     }
 }
